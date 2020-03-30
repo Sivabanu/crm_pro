@@ -25,7 +25,7 @@
 	</span>
 	<span class="span8 margin0px">
 		<span class="row-fluid">
-			<h4 class="recordLabel pushDown" title="{$RECORD->getDisplayValue('salutationtype')}&nbsp;{$RECORD->getName()}"> &nbsp;
+			<h3 class="recordLabel pushDown" title="{$RECORD->getDisplayValue('salutationtype')}&nbsp;{$RECORD->getName()}"> &nbsp;
 				{if $RECORD->getDisplayValue('salutationtype')}
                     <span class="salutation">{$RECORD->getDisplayValue('salutationtype')}</span>&nbsp;
                 {/if}
@@ -37,7 +37,7 @@
                     {if $COUNTER eq 0 && ($RECORD->get($NAME_FIELD))}&nbsp;{assign var=COUNTER value=$COUNTER+1}{/if}
                 {/if}
             {/foreach}
-			</h4>
+			</h3>
 		</span>
 		<span class="row-fluid">
 			<span class="title_label">&nbsp;{$RECORD->getDisplayValue('title')}</span>
@@ -45,6 +45,7 @@
 				&nbsp;{vtranslate('LBL_AT')}&nbsp;
 			{/if}
 			{$RECORD->getDisplayValue('account_id')}
+		
 		</span>
 	</span>
 {/strip}

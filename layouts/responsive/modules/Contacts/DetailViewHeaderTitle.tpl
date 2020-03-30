@@ -27,7 +27,7 @@
 		 </div>
 		 <div class="recordBasicInfo">
 			<div class="info-row">
-			   <h4>
+			   <h3>
 				  <span class="recordLabel  pushDown" title="{$RECORD->getDisplayValue('salutationtype')}&nbsp;{$RECORD->getName()}">
 					 {assign var=COUNTER value=0}
 					 {foreach item=NAME_FIELD from=$MODULE_MODEL->getNameFields()}
@@ -43,7 +43,7 @@
 						{/if}
 					 {/foreach}
 				  </span>
-			   </h4>
+			   </h3>
 			</div>
 			{include file="DetailViewHeaderFieldsView.tpl"|vtemplate_path:$MODULE}
 		 </div>
